@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@400;700;900 & display=swap');
+
+:root {
+    --cor-botao-foco:blue;
+}
+
+* { /*zerou tudo para estilizar*/
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction:initial;
+    align-items: center;
+    justify-content:space-between;
+    /*padding: 40px;*/
+    padding-left: 40px;
+}
+
+.logo{
+    height: 60px;
+}
+.barra_pesquisa{
+    background-color:white;
+    color:black;
+    width:600px;
+    height: 40px;
+    font-size: 20px;
+    text-decoration:solid;
+    text-align: center;
+    
+}
+.menu {
+    display:flex;
+    border-spacing:10px;
+    gap: 20px; /*aproxima ou afasta itens*/
+}
+
+.titulo{
+    font-size: 48px;
+    font-weight: 400px;
+    text-align: center;
+}
+
+.paragrafo{
+    text-align: center;
+}
+
+.botao{
+    background-color:aqua;
+    color:black;
+    width:700px;
+    height: 70px;
+    font-size: 20px;
+    text-decoration:double;
+    text-align: center;
+    border: none; /*cancelar a borda - o none*/
+    border-radius: 30px;
+    cursor:pointer; /*aparecer maozinha quando passar*/
+    transition: all 0.3s ease-in-out;  
+}
+
+.botao:hover{
+    /*pseudoclasse, toda vez que passar o mause por cima do elemento ele muda de estado*/
+    background-color: var(--cor-botao-foco);
+}
+
+.area-principal{
+    display: flex;
+    flex-direction:unset;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 40px;
+}
+.imagem{
+    orientation: center;
+    height: 300px;
+}
+
+.imagens_profissionais{
+    height: 400px;
+}
+.email{
+    background-color:white;
+    color:black;
+    width:250px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.rodape{
+    text-align: center;
+}
